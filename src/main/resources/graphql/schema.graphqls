@@ -1,0 +1,37 @@
+scalar Long
+
+type Query
+{
+    persons(page: Int!, size: Int!): Persons
+    findPersonByName(name: String!, page: Int!, size: Int!): Persons
+    findPersonById(id: Int!): Person
+}
+
+type Persons {
+    person: [Person]
+    totalPages: Int
+    totalElements: Long
+    numberOfElements: Int
+    size: Int
+    number: Int
+}
+
+type Person {
+    id: ID
+    name: String
+    height: String
+    mass: String
+    hair_color: String
+    skin_color: String
+    eye_color: String
+    birth_year: String
+    gender: String
+    homeworld: String
+    films: [String]
+    species: [String]
+    vehicles: [String]
+    starships: [String]
+    created: String
+    edited: String
+    url: String
+}
