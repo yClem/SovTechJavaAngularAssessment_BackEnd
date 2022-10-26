@@ -10,10 +10,10 @@ import java.util.List;
  */
 @Data
 public class Persons {
-    public List<Person> person;
-    public int totalPages;
-    public long totalElements;
-    public int numberOfElements;
-    public int size;
-    public int number;
+    private List<Person> person;
+    private Integer totalPages;
+    private Long totalElements;
+    private Integer numberOfElements;
+    private Integer size;
+    private Integer number;
 }

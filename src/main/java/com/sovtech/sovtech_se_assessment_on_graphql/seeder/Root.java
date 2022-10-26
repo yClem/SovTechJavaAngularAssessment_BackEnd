@@ -12,11 +12,11 @@ public class Root{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
 
-    public int count;
-    public String next;
-    public String previous;
-    public List<Result> results;
+    private Integer count;
+    private String next;
+    private String previous;
+    protected List<Result> results;
 
 }

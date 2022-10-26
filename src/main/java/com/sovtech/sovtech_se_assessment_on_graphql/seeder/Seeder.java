@@ -1,5 +1,7 @@
-package com.sovtech.sovtech_se_assessment_on_graphql.person;
+package com.sovtech.sovtech_se_assessment_on_graphql.seeder;
 
+import com.sovtech.sovtech_se_assessment_on_graphql.person.Person;
+import com.sovtech.sovtech_se_assessment_on_graphql.person.Repository;
 import com.sovtech.sovtech_se_assessment_on_graphql.seeder.Result;
 import com.sovtech.sovtech_se_assessment_on_graphql.seeder.Root;
 import lombok.extern.slf4j.Slf4j;

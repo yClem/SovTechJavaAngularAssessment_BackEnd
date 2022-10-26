@@ -11,7 +11,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
 
     private String name;
     private String height;
@@ -26,24 +26,24 @@ public class Person {
     @ElementCollection
     @CollectionTable(name = "my_films", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "films")
-    public List<String> films;
+    private List<String> films;
 
     @ElementCollection
     @CollectionTable(name = "my_species", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "species")
-    public List<String> species;
+    private List<String> species;
 
     @ElementCollection
     @CollectionTable(name = "my_vehicles", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "vehicles")
-    public List<String> vehicles;
+    private List<String> vehicles;
 
     @ElementCollection
     @CollectionTable(name = "my_starships", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "starships")
-    public List<String> starships;
+    private List<String> starships;
 
-    public Date created;
-    public Date edited;
-    public String url;
+    private Date created;
+    private Date edited;
+    private String url;
 }
