@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * todo :: make this a response entity object. i.e generic for all entities
+ */
 @Data
 public class Persons {
     public List<Person> person;

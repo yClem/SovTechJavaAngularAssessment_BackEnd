@@ -28,11 +28,10 @@ public class Seeder implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
 
         /**
-         * You can as well seed this from a .csv file...
+         * todo :: see if you can seed from file system i.e. .csv file...
          */
         try {
             log.info("Loading data. Please wait...");
-
             Root root = webClient.build()
                     .get()
                     .uri("https://swapi.dev/api/people")
@@ -41,9 +40,7 @@ public class Seeder implements ApplicationRunner {
                     .block();
 
             log.info("Data loaded successfully ["+root.toString()+"]");
-
             Person person;
-
             List<String> films = new ArrayList<>();
             List<String> species = new ArrayList<>();
             List<String> vehicles = new ArrayList<>();

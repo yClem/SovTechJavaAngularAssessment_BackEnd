@@ -21,7 +21,7 @@ public class RestResource {
     }
 
     /**
-     * todo :: use e-search
+     * todo :: use elastic search
      */
     @GetMapping(value = {"/person/name/{name}"})
     public Page<Person> findByName(@PathVariable(value = "name") String name, @RequestParam(value = "page", required = false, defaultValue = "0") int page,
